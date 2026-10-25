@@ -25,5 +25,12 @@ public class Main {
 
         ParkingSpot largest = context.findSpot(spots);
         System.out.println("Largest spot: " + largest);
+
+        // Test with an empty parking list
+        System.out.println("\nTesting empty parking list:");
+
+        ParkingSpot result = context.findSpot(List.of());
+
+        System.out.println("Result: " + result);
     }
 }

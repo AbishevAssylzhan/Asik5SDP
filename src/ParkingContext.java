@@ -13,6 +13,11 @@ public class ParkingContext {
     }
 
     public ParkingSpot findSpot(List<ParkingSpot> spots) {
+        if (spots == null || spots.isEmpty()) {
+            System.out.println("No parking spots available.");
+            return null;
+        }
+
         return strategy.findSpot(spots);
     }
 }
