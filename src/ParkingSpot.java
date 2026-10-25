@@ -26,4 +26,12 @@ public class ParkingSpot {
     public int getSize() {
         return size;
     }
+
+    @Override
+    public String toString() {
+        return "Parking Spot: " + id +
+                ", Distance: " + distance + "m" +
+                ", Price: " + price + " KZT" +
+                ", Size: " + size + " m2";
+    }
 }

@@ -14,16 +14,16 @@ public class Main {
                 new ParkingContext(new NearestSpotStrategy());
 
         ParkingSpot nearest = context.findSpot(spots);
-        System.out.println("Nearest spot: " + nearest.getId());
+        System.out.println("Nearest spot: " + nearest);
 
         context.setStrategy(new CheapestSpotStrategy());
 
         ParkingSpot cheapest = context.findSpot(spots);
-        System.out.println("Cheapest spot: " + cheapest.getId());
+        System.out.println("Cheapest spot: " + cheapest);
 
         context.setStrategy(new LargestSpotStrategy());
 
         ParkingSpot largest = context.findSpot(spots);
-        System.out.println("Largest spot: " + largest.getId());
+        System.out.println("Largest spot: " + largest);
     }
 }
